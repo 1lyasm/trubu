@@ -1,0 +1,8 @@
+[package]
+name = "dianadb_app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+dianadb = { git = "https://github.com/1lyasm/dianadb.git", package = "dianadb"}
+
