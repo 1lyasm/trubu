@@ -5,7 +5,7 @@ version = 3
 [[package]]
 name = "dianadb"
 version = "0.1.0"
-source = "git+https://github.com/1lyasm/dianadb.git#05ce0b091b1eabe3b50f7923392b7f4fd22d68c7"
+source = "git+https://github.com/1lyasm/dianadb.git#d9c7488c07788b263f6b159a07781d190b3f3413"
 dependencies = [
  "env_logger",
  "log",

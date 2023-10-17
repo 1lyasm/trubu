@@ -1,11 +1,10 @@
 fn main() {
-    let shard_count = std::env::args().nth(1).unwrap().parse().unwrap();
-    let mut addresses = Vec::new();
-    std::io::stdin()
-        .lines()
-        .for_each(|line| addresses.push(line.unwrap()));
+    let lines: Vec<String> = std::io::stdin().lines().collect::<Result<_, _>>().unwrap();
+    let shard_count = lines.get(0).unwrap().parse().unwrap();
+    let addresses = lines[1..lines.len()].to_vec();
     let client = dianadb::Client::connect(shard_count, &addresses).unwrap();
-    let mut statement = "SELECT column_name FROM table_name".to_string();
+    let statement = "SELECT column_name FROM table_name".to_string();
     let table = client.run_statement(&statement).unwrap();
     table.print();
 }
+
