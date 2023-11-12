@@ -1,4 +1,4 @@
 all:
 	cargo build
 run:
-	cargo run --bin dianadb_app
+	cat addresses.txt | RUST_LOG=trace ./target/debug/dianadb_app
