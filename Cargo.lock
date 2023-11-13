@@ -23,7 +23,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "dianadb"
 version = "0.1.0"
-source = "git+https://github.com/1lyasm/dianadb.git#2121598febedce1063afcae1e218e87ff74a9002"
+source = "git+https://github.com/1lyasm/dianadb.git#ef9bac7b2cba8e80fb809f9a4ea722cc5a5af77c"
 dependencies = [
  "env_logger",
  "log",
